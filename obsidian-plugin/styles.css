@@ -1,0 +1,30 @@
+.mnemonic-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+  margin-bottom: 8px;
+}
+
+.mnemonic-stats .mnemonic-pill {
+  background: var(--background-modifier-hover);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.mnemonic-btn {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+  background: var(--background-primary);
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: background 0.2s;
+}
+
+.mnemonic-btn:hover {
+  background: var(--background-modifier-hover);
+}
