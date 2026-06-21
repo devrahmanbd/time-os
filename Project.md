@@ -379,6 +379,21 @@ cd frontend && npx vite --port 4000 --host
 
 ---
 
+## Novelty
+
+Mnemonic has specific novelty in three areas:
+
+### 1. Day-Tracked Completion Markers
+Most task systems (Todoist, TickTick, Notion) have binary done/not-done. Mnemonic's `[x]`/`[x2]`/`[x3]` markers track *which day* a task finished — whether it was completed same day, after one grace period, or after two failures. This enables **completion velocity analysis**: the chart shows how many tasks finish on day 1 vs day 2 vs day 3, giving insight into task difficulty and user productivity patterns that binary systems cannot capture.
+
+### 2. Obsidian ↔ Web Hybrid Architecture
+Obsidian is the authoring tool (fast markdown editing, vault-based organization), while the web app provides visual analytics that Obsidian cannot natively render — SVG bar charts with 7 marker series, live progress flows, lifecycle visualization, and full dashboard widgets. The bidirectional sync bridge (batch API + file watcher) lets users work in their preferred environment while still getting rich analytics. This hybrid pattern is uncommon in self-hosted productivity tools.
+
+### 3. All-in-One Self-Hosted Productivity Stack
+Task lifecycle management + pomodoro timer + water tracker + habits + reminders + multi-channel notifications (Telegram, Signal, *SIP phone calls*) in a single 300-line Express backend with SQLite. Most self-hosted alternatives (Vikunja, Plane, Focalboard) focus on one domain. Mnemonic integrates the full daily productivity workflow — planning, execution, hydration breaks, and timed focus sessions — into one zero-dependency app.
+
+---
+
 ## Development Status
 
 ### Done
